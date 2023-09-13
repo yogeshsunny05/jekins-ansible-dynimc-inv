@@ -1,14 +1,13 @@
 provider "aws"{
-region = "ap-south-1"
+region = "us-east-1"
 }
 
-
-resource "aws_instance" "AWSServer"{
-ami = "ami-02bb7d8191b50f4bb"
+resource "aws_instance" "AWSServer" {
+ami = "ami-04cb4ca688797756f"
 instance_type = "t2.micro"
 security_groups = ["launch-wizard-2"]
-key_name = "devopsmithuntechnologies"
+key_name = "devopsredhat9"
 tags = {
-Name =  "tomcatservers"
+Name = "yogeshservers"
 }
 }
